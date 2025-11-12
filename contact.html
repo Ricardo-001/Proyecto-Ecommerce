@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto · NovaCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Light Of Muse</a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Inicio</a>  
+          <a href="products.html" class="nav-link">Tienda</a>
+          <a href="dashboard.html" class="nav-link">Finanzas</a>
+          <a href="about.html" class="nav-link">Quiénes Somos</a>
+          <a href="contact.html" class="nav-link" aria-current="page">Contacto</a>
+        </nav>
+        <button class="cart-btn" aria-label="Carrito">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9.5" cy="19" r="1.5" fill="currentColor"/>
+            <circle cx="17" cy="19" r="1.5" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="contact">
+      <!-- 1. Hero de Ayuda -->
+      <section class="contact-hero">
+        <div class="container">
+          <h1 class="page-title-gradient">¿Cómo podemos ayudarte hoy?</h1>
+          <p class="page-subtitle">Elige la vía más rápida para resolver tu consulta o encontrar la información que necesitas.</p>
+        </div>
+      </section>
+
+      <!-- 2. Bisección: Auto-Servicio vs Contacto Directo -->
+      <section class="contact-grid">
+        <div class="container">
+          <!-- Columna Izquierda: Auto-Servicio -->
+          <div class="contact-selfservice">
+          <h2>Encuentra tu respuesta al instante</h2>
+          <form class="help-search" action="#" role="search" onsubmit="return false">
+            <label for="helpQuery" class="visually-hidden">Buscar en el Centro de Ayuda</label>
+            <input id="helpQuery" type="search" placeholder="Busca en el Centro de Ayuda o FAQ" aria-label="Buscar preguntas frecuentes" />
+            <button class="button primary glow" aria-label="Buscar">Buscar</button>
+          </form>
+
+          <div class="quick-links">
+            <a class="button outline" href="#">Seguimiento de Pedido Digital</a>
+            <a class="button outline" href="#">Reembolsos y Devoluciones</a>
+            <a class="button outline" href="#">Guía de Inicio Rápido</a>
+            <a class="button outline" href="#">Instalación del Producto</a>
+          </div>
+        </div>
+
+          <!-- Columna Derecha: Contacto Directo -->
+          <div class="contact-form">
+            <h2>Contáctanos directamente</h2>
+            <form class="form" action="#" method="post" onsubmit="return false">
+              <div class="field">
+                <label for="name">Nombre Completo (opcional)</label>
+                <input id="name" name="name" type="text" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="email">Correo Electrónico (corporativo)</label>
+                <input id="email" name="email" type="email" required inputmode="email" placeholder="nombre@empresa.com" />
+              </div>
+              <div class="field">
+                <label for="topic">Asunto / Motivo</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>Soporte Técnico</option>
+                  <option>Facturación</option>
+                  <option>Consulta de Venta</option>
+                  <option>Prensa</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+              </div>
+              <div class="field checkbox">
+                <input id="consent" name="consent" type="checkbox" required />
+                <label for="consent">He leído y acepto la política de privacidad (RGPD).</label>
+              </div>
+              <div class="form-actions">
+                <button class="button primary glow" type="submit">Enviar Mensaje</button>
+                <p class="muted small">Respondemos en un plazo máximo de 24 horas laborables.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Canales de Soporte -->
+      <section class="contact-channels">
+        <div class="container">
+        <h2>Otras Formas de Comunicación</h2>
+        <div class="channels-grid">
+          <article class="channel-card">
+            <div class="channel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/></svg>
+            </div>
+            <div class="channel-body">
+              <h3>Chat en Vivo / WhatsApp</h3>
+              <p>Chatea con un experto (Horario de 9 a 18 hrs, GMT-3).</p>
+              <a class="link" href="https://wa.me/0000000000" target="_blank" rel="noopener">Iniciar chat</a>
+            </div>
+          </article>
+
+          <article class="channel-card">
+            <div class="channel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 3h18v4H3zM7 7h10v14H7z"/></svg>
+            </div>
+            <div class="channel-body">
+              <h3>Redes Sociales</h3>
+              <p>Consultas rápidas no críticas.</p>
+              <div class="social-links">
+                <a class="link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">X</a>
+                <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                <a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="channel-card">
+            <div class="channel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <div class="channel-body">
+              <h3>Oficina Principal</h3>
+              <p>Av. Innovación 123, Piso 7, Ciudad Digital</p>
+              <a class="link" href="mailto:contacto@tuprojecto.com">contacto@tuprojecto.com</a>
+            </div>
+          </article>
+        </div>
+        </div>
+      </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Primera Columna: Brand y Redes Sociales -->
+      <div class="footer-brand">
+        <h3 class="footer-logo">Light Of Muse</h3>
+        <p class="footer-slogan">Iluminando tu camino en el comercio digital</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 11.5a10 10 0 1 1-20 0c0-1.74.44-3.37 1.22-4.8L2 2l4.7 1.22A9.98 9.98 0 0 1 11.5 2a10 10 0 0 1 9.5 9.5z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16.5 13.5c-.3-.15-1.7-.85-1.97-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.95 1.15-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5-.18 0-.37-.02-.57-.02-.2 0-.52.07-.8.35-.28.28-1.1 1.07-1.1 2.6 0 1.53 1.12 3.02 1.27 3.23.15.2 2.2 3.35 5.33 4.7.74.3 1.32.48 1.77.62.75.22 1.43.19 1.97.12.6-.08 1.7-.7 1.95-1.37.24-.68.24-1.26.17-1.37-.08-.1-.3-.2-.6-.35z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Segunda Columna: Enlaces -->
+      <div class="footer-links">
+        <h4 class="footer-title">Enlaces</h4>
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">Inicio</a>
+          <a href="products.html" class="footer-link">Tienda</a>
+          <a href="dashboard.html" class="footer-link">Finanzas</a>
+          <a href="about.html" class="footer-link">Quiénes Somos</a>
+          <a href="contact.html" class="footer-link">Contacto</a>
+        </nav>
+      </div>
+
+      <!-- Tercera Columna: Contacto -->
+      <div class="footer-contact">
+        <h4 class="footer-title">Contacto</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span>contacto@lightofmuse.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span>Av. Innovación 123, Ciudad Digital</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">© 2025 Light Of Muse. Pagina Creada Por Ricardo Antequera Para la Feria Eduproft
+          B-72</p>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+  </html>
+
+

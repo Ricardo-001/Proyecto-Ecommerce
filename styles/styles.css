@@ -78,6 +78,45 @@ body {
   font-size: 20px;
 }
 
+
+
+
+
+
+/* 1. Estilos generales para el contenedor del logo */
+.site-header .brand {
+  display: flex; /* Permite alinear el icono y el texto uno al lado del otro */
+  align-items: center; /* Centra verticalmente el icono con el texto */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+/* 2. Estilos para el texto (Aplica la fuente cursiva) */
+.brand-text {
+  font-family: 'Dancing Script', cursive; /* Usa la fuente que elegimos */
+  font-size: 24px; /* Ajusta este tamaño al que prefieras */
+  color: #333; /* Color oscuro o el que uses en tu header */
+  line-height: 1; /* Asegura una alineación limpia */
+  margin-left: 8px; /* Espacio entre el icono y el texto */
+  font-weight: 700; /* Hace que se vea más sólido */
+}
+
+/* 3. Estilos para el icono de imagen */
+.brand-logo-icon {
+  width: 30px; /* Tamaño del icono */
+  height: 30px; /* Asegura que sea un cuadrado */
+  object-fit: contain; /* Si es necesario para que el icono se vea completo */
+  margin-right: 0; /* Asegúrate de que no haya margen innecesario a la derecha */
+}
+
+
+
+
+
+
+
+
+
+
 .nav { display: none; gap: 16px; }
 .nav-link {
   text-decoration: none;
@@ -159,7 +198,7 @@ body {
   overflow: hidden;
 }
 
-.welcome::before {
+/* .welcome::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -167,8 +206,20 @@ body {
   width: 200%;
   height: 200%;
   background: rgba(0, 0, 0, 0.1);
-  /* animation: pulse 5s ease-in-out infinite; */
+} */
+
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Lo simplificamos */
+  left: 0; /* Lo simplificamos */
+  width: 100%; /* Lo simplificamos */
+  height: 100%; /* Lo simplificamos */
+  /* Aumenta la opacidad (0.4 o 0.5 queda bien) para oscurecer el fondo */
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0; /* Asegura que esté detrás del contenido */
 }
+
 
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
@@ -190,19 +241,41 @@ body {
   z-index: 1;
 }
 
-.welcome-title {
+/* .welcome-title {
   margin: 0;
   font-size: clamp(56px, 12vw, 120px);
   line-height: 1;
   letter-spacing: -2px;
   font-weight: 700;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #ec4899 100%);
+  
+
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: gradient-shift 8s ease infinite;
   background-size: 200% 200%;
+} */
+
+.welcome-title {
+  margin: 0;
+  font-size: clamp(56px, 12vw, 120px);
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 700; /* Puedes mantenerlo o ajustarlo según la fuente cursiva */
+  color: #ffffff; /* ✨ Nuevo: Establecer el color blanco */
+  animation: gradient-shift 8s ease infinite; /* Puedes mantener la animación si quieres */
+  background-size: 200% 200%; /* Puedes mantenerla si quieres */
+  /* ✨ Sombra de texto para hacerlo legible y que la 'g' se vea */
+  text-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.9),  /* Sombra más fuerte y oscura para resaltar */
+    -1px -1px 0px rgba(0, 0, 0, 0.4); /* Un pequeño contorno oscuro */
+  font-family: 'Dancing Script', cursive; /* Si falla, usa una genérica 'cursive' */
+  font-weight: 700; /* Asegúrate de que el peso sea uno que importaste, 700 para negrita */
 }
+
+
+
 
 
 .welcome-actions {
@@ -220,6 +293,8 @@ body {
     rgba(249, 250, 252, 0.95) 50%,
     rgba(245, 247, 251, 1) 100%
   );
+  text-align: center;
+  font-size: 2rem;
 }
 
 .project-grid {
@@ -236,7 +311,7 @@ body {
 
 @media (min-width: 1024px) {
   .project-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -1124,18 +1199,19 @@ body {
 }
 
 .product-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: var(--surface-muted);
-  position: relative;
+  width: 100%; 
+  aspect-ratio: 1 / 1; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 300ms ease;
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+  display: block; 
 }
 
 .catalog-product-card:hover .product-image img {
@@ -1174,8 +1250,6 @@ body {
 }
 
 .product-actions-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 8px;
   margin-top: 4px;
 }
@@ -2357,5 +2431,28 @@ body {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

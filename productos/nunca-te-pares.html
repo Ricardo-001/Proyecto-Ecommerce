@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiénes Somos · Light Of Muse</title>
+  <title>Nunca te pares · Light Of Muse</title> 
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" />
+  
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/productos.css">
 </head>
 
 <body>
@@ -21,11 +23,12 @@
         <span class="brand-text">Light Of Muse</span>
       </a>
       <nav class="nav">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="products.html" class="nav-link">Tienda</a>
-        <a href="dashboard.html" class="nav-link">Finanzas</a>
-        <a href="about.html" class="nav-link" aria-current="page">Quiénes Somos</a>
-        <a href="contact.html" class="nav-link">Contacto</a>
+        <a href="/index.html" class="nav-link">Inicio</a>
+        <a href="/products.html" class="nav-link" aria-current="page">Tienda</a>
+        <a href="/favorites.html" class="nav-link">Favoritos</a>
+        <a href="/dashboard.html" class="nav-link">Finanzas</a>
+        <a href="/about.html" class="nav-link">Quiénes Somos</a>
+        <a href="/contact.html" class="nav-link">Contacto</a>
       </nav>
       <button class="cart-btn" aria-label="Carrito">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -41,130 +44,51 @@
     </div>
   </header>
 
-  <main class="about-page">
-    <!-- Hero Section -->
-    <section class="about-hero">
+  <main>
+    <section class="product-detail-content">
       <div class="container">
-        <h1 class="page-title-gradient">Quiénes Somos</h1>
-        <p class="page-subtitle">Conoce más sobre Light Of Muse, nuestra misión, visión y el equipo detrás de este
-          proyecto innovador.</p>
-      </div>
-    </section>
-
-    <!-- Información del Proyecto -->
-    <section class="about-content">
-      <div class="container">
-        <article class="about-card about-card-primary">
-          <div class="about-icon">🚀</div>
-          <h2>Nuestro Proyecto</h2>
-          <p>Light Of Muse nace de una visión simple pero ambiciosa: reimaginar la experiencia de compra en línea para
-            la era digital. Como estudiantes y creadores, entendimos que el mercado necesitaba más que un simple portal
-            de ventas.</p>
-          <p>Necesita una plataforma que combine la diversidad de un gigante con la agilidad y la innovación de la
-            tecnología de mañana. Este proyecto es nuestra respuesta: un marketplace digital robusto, intuitivo y listo
-            para escalar.</p>
-          <p>Estamos comprometidos con ofrecer una experiencia de usuario excepcional, donde cada interacción esté
-            diseñada pensando en la comodidad, seguridad y satisfacción de nuestros clientes.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Misión y Visión -->
-    <section class="mission-vision">
-      <div class="container">
-        <div class="mv-grid">
-          <article class="mv-card mv-card-mission">
-            <div class="mv-icon">🎯</div>
-            <h2>Nuestra Misión</h2>
-            <p>ofrecer experiencias fabulosas a
-              nuestros clientes ofreciendo
-              productos únicos y de alta
-              calidad en artesanía, libros y
-              maquillaje, con un compromiso
-              con la calidad y la satisfacción
-              del cliente.</p>
-          </article>
-
-          <article class="mv-card mv-card-vision">
-            <div class="mv-icon">✨</div>
-            <h2>Nuestra Visión</h2>
-            <p>Queremos ser la tienda que inspira
-              creatividad y pasión por la
-              artesanía, los libros y el maquillaje
-              en nuestra comunidad, ofreciendo
-              experiencias únicas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Equipo -->
-
-    <section class="team-section">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="section-title-gradient">Nuestro Equipo</h2>
-          <p class="section-subtitle">El talento detrás de Light Of Muse</p>
-        </header>
-
-        <div class="team-grid">
-          <article class="team-card">
-            <div class="team-icon">💻</div>
-            <h3>Programadores</h3>
-            <p>Dos programadores
-              encargados de la creacion de la pagina web del pryecto, Ricardo Antequera y Diego Mendoza
-              responsables de la creacion de la pagina web del proyecto.</p>
-          </article>
-
-          <article class="team-card">
-            <div class="team-icon">📊</div>
-            <h3>Administradores</h3>
-            <p>Dos administradoras que garantizan la estructura operativa y la estrategia de crecimiento del proyecto.
+        <div class="product-detail-layout">
+          <div class="product-image-section">
+            <div class="product-main-image">
+              <img 
+                src="https://images.cdn2.buscalibre.com/fit-in/360x360/bf/24/bf24bcba993e45c30b14000fb8084aea.jpg" 
+                alt="Portada del libro Nunca te pares: Autobiografía del fundador de Nike" 
+              />
+            </div>
+          </div>
+  
+          <div class="product-info-section">
+            <h1 class="product-detail-title">Nunca te pares: Autobiografía del fundador de Nike</h1>
+  
+            <p class="product-detail-price">$ 22.00</p>
+  
+            <p class="product-detail-description">
+              Phil Knight, el reclusivo y enigmático creador de Nike, cuenta por primera vez la auténtica historia de cómo fundó la empresa en 1962 con 50 dólares prestados y una idea simple: importar zapatillas de deporte de calidad y bajo costo desde Japón. Estas memorias relatan los riesgos, los reveses y los triunfos iniciales, y la mágica alquimia de un equipo de inadaptados que, impulsados por una fe profunda en el espíritu del deporte, construyeron una marca que transformó todos los cánones establecidos. Un libro inspirador recomendado por Bill Gates.
             </p>
-          </article>
-
-          <article class="team-card">
-            <div class="team-icon">💰</div>
-            <h3>Contabilidad</h3>
-            <p>Una experta en contabilidad que asegura la transparencia financiera y la sostenibilidad a largo plazo.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Valores -->
-    <section class="values-section">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="section-title-gradient">Nuestros Valores</h2>
-          <p class="section-subtitle">Los principios que guían nuestro trabajo</p>
-        </header>
-
-        <div class="values-grid">
-          <article class="value-card">
-            <div class="value-icon">🔒</div>
-            <h3>Seguridad</h3>
-            <p>Priorizamos la protección de datos y transacciones de nuestros usuarios.</p>
-          </article>
-
-          <article class="value-card">
-            <div class="value-icon">⚡</div>
-            <h3>Innovación</h3>
-            <p>Buscamos constantemente nuevas formas de mejorar la experiencia del usuario.</p>
-          </article>
-
-          <article class="value-card">
-            <div class="value-icon">🤝</div>
-            <h3>Transparencia</h3>
-            <p>Mantenemos comunicación clara y honesta con todos nuestros stakeholders.</p>
-          </article>
-
-          <article class="value-card">
-            <div class="value-icon">🎯</div>
-            <h3>Excelencia</h3>
-            <p>Nos esforzamos por superar las expectativas en cada aspecto de nuestro servicio.</p>
-          </article>
+            
+            <button class="add-to-cart-button" id="addToCart">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="9.5" cy="19" r="1.5" fill="currentColor" />
+                <circle cx="17" cy="19" r="1.5" fill="currentColor" />
+              </svg>
+              Agregar al Carrito
+            </button>
+  
+            <div class="product-details-grid">
+              <div class="product-detail-card">
+                <h3>Lecciones Clave de la Obra</h3>
+                <ul>
+                  <li>**Emprendimiento con Pasión:** El valor de perseguir una "idea descabellada".</li>
+                  <li>**Resiliencia Financiera:** Superar constantes crisis de liquidez y bancarias.</li>
+                  <li>**El Poder del Equipo:** La importancia de los compañeros de viaje excéntricos y leales.</li>
+                  <li>**Innovación Constante:** La audacia para transformar un mercado saturado.</li>
+                  <li>**Ideal para:** Emprendedores, líderes, y cualquier persona que busque motivación para no rendirse.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -172,7 +96,6 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <!-- Primera Columna: Brand y Redes Sociales -->
       <div class="footer-brand">
         <h3 class="footer-logo">Light Of Muse</h3>
         <p class="footer-slogan">Iluminando tu camino en el comercio digital</p>
@@ -206,7 +129,6 @@
         </div>
       </div>
 
-      <!-- Segunda Columna: Enlaces -->
       <div class="footer-links">
         <h4 class="footer-title">Enlaces</h4>
         <nav class="footer-nav">
@@ -218,7 +140,6 @@
         </nav>
       </div>
 
-      <!-- Tercera Columna: Contacto -->
       <div class="footer-contact">
         <h4 class="footer-title">Contacto</h4>
         <div class="contact-info">
@@ -257,12 +178,10 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p class="footer-copyright">© 2025 Light Of Muse. Pagina Creada Por Ricardo Antequera Para la Feria Eduproft
-          B-72</p>
+        <p class="footer-copyright">© 2025 Light Of Muse. Pagina Creada Por Ricardo Antequera Para la Feria Eduproft B-72</p>
       </div>
     </div>
   </footer>
 
 </body>
-
 </html>

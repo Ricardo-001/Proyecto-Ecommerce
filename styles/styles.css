@@ -702,6 +702,25 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .product-body { padding: 12px; display: grid; gap: 8px; }
 .product-title { margin: 0; font-size: 16px; }
 .product-meta {
@@ -1177,7 +1196,7 @@ body {
 
 @media (min-width: 1280px) {
   .catalog-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -1559,6 +1578,8 @@ body {
 }
 
 .contact-grid {
+  display: flex;
+  justify-content: center;
   padding: 60px 0;
   background: linear-gradient(180deg, 
     rgba(245, 247, 251, 1) 0%,
@@ -1581,6 +1602,9 @@ body {
 
 .contact-selfservice,
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   padding: 32px;
   border-radius: 20px;
   background: var(--surface);
@@ -2456,3 +2480,116 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- 1. NUEVAS REGLAS PARA EL CHECKBOX --- */
+
+/* Oculta visualmente el checkbox de control */
+.menu-toggle-checkbox {
+  /* La forma más accesible de ocultar */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* El botón que activa el menú (la etiqueta/label) */
+.menu-toggle {
+  /* Mismos estilos que antes, pero usando 'label' */
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  display: grid; /* Muestra el botón en móvil */
+  place-items: center;
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease;
+  z-index: 60;
+}
+.menu-toggle:hover { border-color: var(--primary); color: var(--primary); }
+
+/* --- 2. REGLAS PARA LA NAVEGACIÓN EN MÓVIL --- */
+
+/* La navegación se oculta por defecto en la vista móvil */
+.nav { 
+  display: none; /* Oculto por defecto */
+  gap: 16px; 
+}
+
+/* **EL HACK CSS:** Cuando el checkbox está marcado, muestra el elemento .nav */
+.menu-toggle-checkbox:checked ~ .nav {
+  display: flex;
+  flex-direction: column; /* Apila verticalmente */
+  position: absolute;
+  top: 64px; /* Altura del header-inner */
+  left: 0;
+  width: 100%;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 55; /* Detrás del botón de toggle */
+}
+
+/* Estilos para los enlaces dentro del menú móvil */
+.menu-toggle-checkbox:checked ~ .nav .nav-link {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.menu-toggle-checkbox:checked ~ .nav .nav-link:last-child {
+  border-bottom: none;
+}
+
+
+/* --- 3. REGLAS PARA ESCRITORIO (MIN-WIDTH: 768PX) --- */
+
+@media (min-width: 768px) {
+  /* Oculta el botón de hamburguesa y el checkbox en escritorio */
+  .menu-toggle,
+  .menu-toggle-checkbox {
+      display: none; 
+  }
+  
+  /* Muestra la navegación por defecto en escritorio (horizontalmente) */
+  .nav { 
+      display: flex; 
+      position: static; 
+      flex-direction: row;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+  }
+
+  /* Restaura los estilos de enlace en escritorio */
+  .nav-link {
+      padding: 0;
+      border: none;
+  }
+}

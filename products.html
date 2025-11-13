@@ -1,612 +1,1036 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda · Light Of Muse</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/productos.css" /> 
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="/Gemini_Generated_Image_mtl4rimtl4rimtl4 - copia.png" alt="Logo Light Of Muse" class="brand-logo-icon"> 
-          <span class="brand-text">Light Of Muse</span>
-        </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Inicio</a>
-          <a href="products.html" class="nav-link" aria-current="page">Tienda</a>
-          <a href="dashboard.html" class="nav-link">Finanzas</a>
-          <a href="about.html" class="nav-link">Quiénes Somos</a>
-          <a href="contact.html" class="nav-link">Contacto</a>
-        </nav>
-        <button class="cart-btn" aria-label="Carrito">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true">
-            <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <circle cx="9.5" cy="19" r="1.5" fill="currentColor" />
-            <circle cx="17" cy="19" r="1.5" fill="currentColor" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda · Light Of Muse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/productos.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      
+      <a class="brand" href="index.html">
+        <img src="/Gemini_Generated_Image_mtl4rimtl4rimtl4 - copia.png" alt="Logo Light Of Muse"
+          class="brand-logo-icon">
+        <span class="brand-text">Light Of Muse</span>
+      </a>
+      
+      <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" aria-label="Toggle Menu">
+  
+      <label for="menu-toggle-checkbox" class="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
-        </button>
+      </label>
+  
+      <nav class="nav">
+        <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+        <a href="products.html" class="nav-link">Tienda</a>
+        <a href="dashboard.html" class="nav-link">Finanzas</a>
+        <a href="about.html" class="nav-link">Quiénes Somos</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+      
+      <a href="cart.html" class="cart-btn" aria-label="Carrito de compras">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               <circle cx="9.5" cy="19" r="1.5" fill="currentColor" />
+               <circle cx="17" cy="19" r="1.5" fill="currentColor" />
+          </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="products-page">
+    <section class="products-hero">
+      <div class="container">
+        <h1 class="page-title-gradient">Nuestra Tienda</h1>
+        <p class="page-subtitle">Descubre productos únicos de artesanía, libros y maquillaje de alta calidad para
+          inspirar tu creatividad.</p>
       </div>
-    </header>
+    </section>
 
-    <main class="products-page">
-      <section class="products-hero">
-        <div class="container">
-          <h1 class="page-title-gradient">Nuestra Tienda</h1>
-          <p class="page-subtitle">Descubre productos únicos de artesanía, libros y maquillaje de alta calidad para inspirar tu creatividad.</p>
+    <section class="products-content">
+      <div class="container">
+        <div class="catalog-grid">
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/ac/e8/f1/ace8f1ea97dd460d378dc173898aadc5.jpg"
+                alt="Portada del libro Cómo Ganar Amigos" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cómo Ganar Amigos</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Guía clásica de Dale Carnegie que enseña principios fundamentales de
+                comunicación para mejorar tus relaciones personales y profesionales.</p>
+              <div class="product-actions-top">
+                <a href="/productos/como-ganar-amigos.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Cómo Ganar Amigos" data-price="8000"> Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/6e/da/0b/6eda0b9ec3d87b68aaf3ad888427c8be.jpg"
+                alt="Portada del libro Hábitos Atómicos" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hábitos Atómicos</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Descubre cómo los pequeños cambios en tus hábitos pueden conducir a
+                resultados notables en tu vida personal y profesional.</p>
+              <div class="product-actions-top">
+                <a href="/productos/habitos-atomicos.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Habitos Atomicos" data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/7c/82/f6/7c82f65dc64c138c13e7705b7f714c94.jpg"
+                alt="Portada del libro Cien Años de Soledad" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cien Años de Soledad</h3>
+              <div class="product-price">$ 9.000</div>
+              <p class="product-description">La obra maestra de Gabriel García Márquez. Un viaje a través de la historia
+                de la familia Buendía en el pueblo de Macondo.</p>
+              <div class="product-actions-top">
+                <a href="/productos/cien-años-de-soledad.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Cien años de soledad" data-price="9000">Agregar
+                al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/bf/24/bf24bcba993e45c30b14000fb8084aea.jpg"
+                alt="Portada del libro Nunca te Pares" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Nunca te Pares</h3>
+              <div class="product-price">$ 9.000</div>
+              <p class="product-description">Memorias de Phil Knight, fundador de Nike. Una inspiradora historia sobre
+                la creación de una de las marcas más icónicas del mundo.</p>
+              <div class="product-actions-top">
+                <a href="/productos/nunca-te-pares.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Nunca te pares" data-price="9000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/c8/e4/13/c8e41378c4643036ecf18055c8af61d9.jpg"
+                alt="Portada del libro Hija de la Fortuna" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hija de la Fortuna</h3>
+              <div class="product-price">$ 10.000</div>
+              <p class="product-description">Una apasionante novela de Isabel Allende ambientada en el Chile del siglo
+                XIX y la fiebre del oro en California.</p>
+              <div class="product-actions-top">
+                <a href="/productos/hija-de-la-fortuna.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Hija de la fortuna" data-price="10000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/2a/9c/1c/2a9c1c46d954517429c8a5ad5818df36.jpg"
+                alt="Portada del libro El arte de la guerra" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">El arte de la guerra</h3>
+              <div class="product-price">$ 6.000</div>
+              <p class="product-description">Clásico tratado militar de Sun Tzu, cuyas estrategias son aplicables a la
+                política, los negocios y la vida cotidiana.</p>
+              <div class="product-actions-top">
+                <a href="/productos/el-arte-de-la-guerra.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="El arte de la guerra" data-price="6000">Agregar
+                al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://media.istockphoto.com/id/164505409/es/foto/l%C3%A1piz-labial-rojo.jpg?s=612x612&w=0&k=20&c=eNdOKL6P787wz0DYjOYN6rqjW6CAmDr1OJAS-BvCJu0="
+                alt="Labial Líquido Matte Eternal Rose" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Labial Líquido Matte | Eternal Rose</h3>
+              <div class="product-price">$ 15.000</div>
+              <p class="product-description">Fórmula ultraligera, acabado mate aterciopelado y duración de hasta 16 horas. Color rosa intenso.</p>
+              <div class="product-actions-top">
+                <a href="/productos/labial-eternal-rose.html" class="btn-view" aria-label="Ver detalles del labial Eternal Rose">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Labial Eternal Rose" data-price="15000">Agregar al Carrito</button>
+            </div>
+          </article>
+          
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://media.falabella.com/falabellaCL/80626772_1/width=480,height=480,quality=70,format=webp,fit=pad"
+                alt="Gloss de Labios Crystal Shine" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Gloss de Labios | Crystal Shine</h3>
+              <div class="product-price">$ 12.500</div>
+              <p class="product-description">Brillo deslumbrante, efecto espejo e hidratación profunda. Fórmula no pegajosa y enriquecida con Vitamina E.</p>
+              <div class="product-actions-top">
+                <a href="/productos/gloss-crystal-shine.html" class="btn-view" aria-label="Ver detalles del Gloss Crystal Shine">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Gloss Crystal Shine" data-price="12500">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://www.penguinlibros.com/cl/2381327-large_default/la-revelacion-almas-perdidas-1.webp"
+                alt="Portada del libro La revelación" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">La revelacion</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Primera parte de la saga "Almas Perdidas". Una historia de fantasía y
+                misterio que te transportará a un mundo sobrenatural.</p>
+              <div class="product-actions-top">
+                <a href="/productos/la-revelacion.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="La revelacion" data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/ee/b8/7a/eeb87a0078706d53dc0ee75d91af5b09.jpg"
+                alt="Portada del libro Piense y hágase rico" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Piense y hágase rico</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">El famoso libro de Napoleon Hill que analiza las 13 leyes para alcanzar el
+                éxito y la prosperidad financiera.</p>
+              <div class="product-actions-top">
+                <a href="/productos/piense-y-hagase-rico.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Piense y hágase rico" data-price="8000">Agregar
+                al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/0b/72/87/0b728798f3ca6daab265c3ce94882faa.jpg"
+                alt="Portada del libro El hombre más rico de babilonia" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">El hombre más rico de Babilonia</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un clásico de las finanzas personales que ofrece principios atemporales
+                para la acumulación de riqueza y el ahorro.</p>
+              <div class="product-actions-top">
+                <a href="/productos/el-hombre-mas-rico-de-babilonia.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="El hombre más rico de Babilonia"
+                data-price="7000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/a8/f7/ff/a8f7fffd48f08f1a2a2f866d8b28aa47.jpg"
+                alt="Portada del libro Vendes o Vendes" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Vendes o Vendes</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">El audaz enfoque de Grant Cardone sobre las ventas y la importancia de la
+                actitud para tener éxito en cualquier campo.</p>
+              <div class="product-actions-top">
+                <a href="/productos/vendes-o-vendes.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Vendes o Vendes" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://i.pinimg.com/736x/c3/86/29/c38629ba1a44ebb746d842cb4617cffe.jpg"
+                alt="Portada del libro Asesino de Brujas" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Asesino de Brujas</h3>
+              <div class="product-price">$ 9.000</div>
+              <p class="product-description">Novela de fantasía oscura y romance sobre una cazadora de brujas y un
+                asesino obligado a trabajar juntos para sobrevivir.</p>
+              <div class="product-actions-top">
+                <a href="/productos/asesino-de-brujas.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Asesino de Brujas" data-price="9000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/e4/55/e45590dcdf647c88d3a5e4c1297b8db9.jpg"
+                alt="Portada del libro El Código de la Disciplina" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">El Código de la Disciplina</h3>
+              <div class="product-price">$ 6.000</div>
+              <p class="product-description">Un manual práctico que te enseña a construir una disciplina inquebrantable
+                para alcanzar tus metas a largo plazo.</p>
+              <div class="product-actions-top">
+                <a href="/productos/el-codigo-de-la-disiplina.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="El Código de la Disciplina"
+                data-price="6000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_845550-MLA88114393167_072025-F.webp"
+                alt="Portada del libro Te vas a morir y todavía no has empezado a vivir" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Te vas a morir y todavía no has empezado a vivir</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un llamado a la acción para dejar de posponer tus sueños y vivir una vida
+                plena, sin arrepentimientos.</p>
+              <div class="product-actions-top">
+                <a href="/productos/te-vas-a-morir.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Te vas a morir y todavía no has empezado a vivir"
+                data-price="7000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/ed/2f/ed2fd7ce242bec1bbe4e8cecf9cb5777.jpg"
+                alt="Portada del libro El Vendedor más Grande del Mundo" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">El Vendedor más Grande del Mundo</h3>
+              <div class="product-price">$ 6.000</div>
+              <p class="product-description">Una inspiradora fábula de Og Mandino que revela los principios y secretos
+                de una vida de éxito a través de los pergaminos.</p>
+              <div class="product-actions-top">
+                <a href="/productos/el-vendedor-mas-grande.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="El Vendedor más Grande del Mundo"
+                data-price="6000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/af/59/af59d9e08687c9de675e03ea1395b69c.jpg"
+                alt="Portada del libro Psicologia Oscura" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Psicología Oscura</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Explora los aspectos menos éticos de la persuasión, la manipulación y cómo
+                protegerte de la influencia psicológica negativa.</p>
+              <div class="product-actions-top">
+                <a href="/productos/psicologia-oscura.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Psicología Oscura" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://i0.wp.com/incunabula.co/wp-content/uploads/libro-la-culpa-es-de-la-vaca-jaime-lopera-marta-intermedio.webp?fit=800%2C800&ssl=1"
+                alt="Portada del libro La Culpa es de la Vaca" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">La Culpa es de la Vaca</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Colección de anécdotas y relatos para reflexionar sobre la actitud, la
+                creatividad y el liderazgo personal.</p>
+              <div class="product-actions-top">
+                <a href="/productos/la-culpa-es-de-la-vaca.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="La Culpa es de la Vaca" data-price="7000">Agregar
+                al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://www.antartica.cl/media/catalog/product/9/7/9788478086085_1.png?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
+                alt="Portada del libro Los Secretos de la Mente Millonaria" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Los Secretos de la Mente Millonaria</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Descubre los archivos de riqueza que definen cómo piensan y actúan las
+                personas millonarias en relación con el dinero.</p>
+              <div class="product-actions-top">
+                <a href="/productos/los-secretos-de-la-mente-millonaria.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Los Secretos de la Mente Millonaria"
+                data-price="8000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/db/2b/db2b538974143607a817fbc28577cb09.jpg"
+                alt="Portada del libro La Psicología del Dinero" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">La Psicología del Dinero</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Morgan Housel te enseña cómo el comportamiento y la mentalidad influyen en
+                tu éxito financiero más que las fórmulas matemáticas.</p>
+              <div class="product-actions-top">
+                <a href="/productos/la-psicologia-de-dinero.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="La Psicología del Dinero"
+                data-price="8000">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622471-MLA46040246781_052021-F.webp"
+                alt="Portada del libro El secreto" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">El secreto</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Explora la Ley de la Atracción y cómo tus pensamientos pueden influir en la
+                realidad y manifestar tus deseos.</p>
+              <div class="product-actions-top">
+                <a href="/productos/el-secreto.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="El secreto" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/5b/1e/5b1ee931416902d55c56e21ee0f6ee67.jpg"
+                alt="Portada del libro Querida yo" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Querida yo</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un libro de autodescubrimiento y crecimiento personal que te invita a la
+                reflexión y al amor propio.</p>
+              <div class="product-actions-top">
+                <a href="/productos/querida-yo.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Querida yo" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img src="https://www.penguinlibros.com/cl/2482231-large_default/terapia-para-llevar.webp"
+                alt="Portada del libro Terapia para Llevar" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Terapia para Llevar</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un manual práctico de autoterapia emocional, con ejercicios sencillos para
+                manejar el estrés y la ansiedad.</p>
+              <div class="product-actions-top">
+                <a href="/productos/terapia-para-llevar.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Terapia para Llevar" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+
+
+
+
+
+
+
+
+
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://www.antartica.cl/media/catalog/product/9/7/9789801837794_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                alt="Portada del libro 50 Cápsulas de Amor Propio" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">50 Cápsulas De Amor Propio</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Un libro que ofrece dosis diarias de reflexiones, consejos y ejercicios
+                para nutrir y fortalecer tu autoestima y amor propio.</p>
+              <div class="product-actions-top">
+                <a href="/productos/50-capsulas-de-amor-propio.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="50 Cápsulas De Amor Propio"
+                data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Las_48_Leyes_del_Poder_cover.svg/500px-Las_48_Leyes_del_Poder_cover.svg.png"
+                alt="Portada del libro Las 48 Leyes del Poder" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Las 48 Leyes del Poder</h3>
+              <div class="product-price">$ 11.000</div>
+              <p class="product-description">Explora un análisis atemporal y controvertido sobre las leyes de la
+                manipulación, el poder y la estrategia en la historia.</p>
+              <div class="product-actions-top">
+                <a href="/productos/las-48-leyes-del-poder.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Las 48 Leyes del Poder" data-price="11000">Agregar
+                al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJOGOOFYYfdBjdUmk5moBgHE9HIqn-IvOF6z0CzjhOlsZ4h0fY"
+                alt="Portada del libro Abraza a la niña que fuiste" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Abraza a la niña que fuiste</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Una guía para sanar heridas emocionales de la infancia, reconectar con tu
+                yo pasado y construir una vida más plena.</p>
+              <div class="product-actions-top">
+                <a href="/productos/abraza-a-la-niña-que-fuiste.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Abraza a la niña que fuiste"
+                data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSahU-CmqL_QDvWoerVVZiGJV6SnZ9kU-OslifeNq8gG5mJih3z"
+                alt="Portada del libro Cómo mandar a la mierda de forma educada" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cómo mandar a la mierda de forma educada</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Un libro de humor y empoderamiento que enseña asertividad y a establecer
+                límites, sin perder la compostura.</p>
+              <div class="product-actions-top">
+                <a href="/productos/como-mandar-a-la-mierda-de-forma-educada.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Cómo mandar a la mierda de forma educada"
+                data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://www.antartica.cl/media/catalog/product/9/7/9789566063575_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                alt="Portada del libro Padre Rico, Padre Pobre" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Padre Rico, Padre Pobre</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">El bestseller de Robert Kiyosaki que desafía las creencias tradicionales
+                sobre el dinero, el trabajo y el camino hacia la independencia financiera.</p>
+              <div class="product-actions-top">
+                <a href="/productos/padre-rico-padre-pobre.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Padre Rico, Padre Pobre" data-price="7000">Agregar
+                al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://pdlibroschl.cdnstatics2.com/usuaris/libros/thumbs/12f964d9-776d-459c-b380-ab439d26b01d/d_360_620/portada_weona-tu-podi_carmen-castillo_201910181509.webp"
+                alt="Portada del libro Weona, tú podí" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Weona, tú podí</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un manifiesto de empoderamiento y autoaceptación que te recuerda tu
+                potencial y la fuerza que reside en ti.</p>
+              <div class="product-actions-top">
+                <a href="/productos/weona-tu-podi.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Weona, tú podí" data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://www.antartica.cl/media/catalog/product/9/7/9798289668523_1_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                alt="Portada del libro Mi Psicóloga Me Dijo" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mi Psicóloga Me Dijo</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Un compendio de lecciones y herramientas de terapia para manejar el estrés,
+                la ansiedad y mejorar tu bienestar emocional.</p>
+              <div class="product-actions-top">
+                <a href="/productos/mi-psicologa-me-dijo.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Mi Psicóloga Me Dijo" data-price="7000">Agregar
+                al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnsuET8IGmnYFB1hTNdSqgE12XDnWy6-tlqHWrnar0lMcqPhK9"
+                alt="Portada del libro De mí para mí" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">De Mí Para Mí</h3>
+              <div class="product-price">$ 8.000</div>
+              <p class="product-description">Un diario o libro de autoayuda centrado en la introspección y el desarrollo
+                personal, un espacio para dedicarte a ti mismo.</p>
+              <div class="product-actions-top">
+                <a href="/productos/de-mi-para-mi.html" class="btn-view" aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="De Mí Para Mí" data-price="8000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+          <article class="catalog-product-card">
+            <div class="product-image">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdb3v8qxreI_bRywvT70XbUiROR0F0yBJ60HFE-brZbP9DVOXM"
+                alt="Portada del libro Cómo Dejar de Pensar Demasiado" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cómo Dejar de Pensar Demasiado</h3>
+              <div class="product-price">$ 7.000</div>
+              <p class="product-description">Ofrece técnicas y estrategias prácticas para calmar la mente, reducir la
+                rumiación mental y vivir con mayor paz.</p>
+              <div class="product-actions-top">
+                <a href="/productos/como-dejar-de-pensar-demasiado.html" class="btn-view"
+                  aria-label="Ver detalles del producto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>ver</span>
+                </a>
+              </div>
+              <button class="btn-add-cart add-to-cart-btn" data-name="Cómo Dejar de Pensar Demasiado"
+                data-price="7000">Agregar al
+                Carrito</button>
+            </div>
+          </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Light Of Muse</h3>
+        <p class="footer-slogan">Iluminando tu camino en el comercio digital</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 11.5a10 10 0 1 1-20 0c0-1.74.44-3.37 1.22-4.8L2 2l4.7 1.22A9.98 9.98 0 0 1 11.5 2a10 10 0 0 1 9.5 9.5z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16.5 13.5c-.3-.15-1.7-.85-1.97-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.95 1.15-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5-.18 0-.37-.02-.57-.02-.2 0-.52.07-.8.35-.28.28-1.1 1.07-1.1 2.6 0 1.53 1.12 3.02 1.27 3.23.15.2 2.2 3.35 5.33 4.7.74.3 1.32.48 1.77.62.75.22 1.43.19 1.97.12.6-.08 1.7-.7 1.95-1.37.24-.68.24-1.26.17-1.37-.08-.1-.3-.2-.6-.35z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
         </div>
-      </section>
+      </div>
 
-      <section class="products-content">
-        <div class="container">
-          <div class="catalog-grid">
-            
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/ac/e8/f1/ace8f1ea97dd460d378dc173898aadc5.jpg" alt="Jarrón de Cerámica Artesanal" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Cómo Ganar Amigos</h3>
-                <div class="product-price">$45.00</div>
-                <p class="product-description">Hermoso jarrón hecho a mano con técnicas tradicionales. Perfecto para decorar tu hogar con estilo único.</p>
-                <div class="product-actions-top">
-                  <a href="/productos/como-ganar-amigos.html" class="btn-view" aria-label="Ver detalles del producto"> 
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span> 
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
+      <div class="footer-links">
+        <h4 class="footer-title">Enlaces</h4>
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">Inicio</a>
+          <a href="products.html" class="footer-link">Tienda</a>
+          <a href="dashboard.html" class="footer-link">Finanzas</a>
+          <a href="about.html" class="footer-link">Quiénes Somos</a>
+          <a href="contact.html" class="footer-link">Contacto</a>
+        </nav>
+      </div>
 
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/6e/da/0b/6eda0b9ec3d87b68aaf3ad888427c8be.jpg" alt="El Arte de la Creatividad" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Hábitos Atómicos</h3>
-                <div class="product-price">$25.00</div>
-                <p class="product-description">Una guía inspiradora para desbloquear tu potencial creativo y llevar tus proyectos al siguiente nivel.</p>
-                <div class="product-actions-top">
-                  <a href="/productos/habitos-atomicos.html" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/7c/82/f6/7c82f65dc64c138c13e7705b7f714c94.jpg" alt="Paleta de Sombras Premium" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">cien años de soledad</h3>
-                <div class="product-price">$32.00</div>
-                <p class="product-description">Paleta con 12 tonos altamente pigmentados. Ideal para crear looks naturales o dramáticos con alta duración.</p>
-                <div class="product-actions-top">
-                  <a href="/productos/cien-años-de-soledad.html" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/bf/24/bf24bcba993e45c30b14000fb8084aea.jpg" alt="Bufanda de Lana Artesanal" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Nunca te pares</h3>
-                <div class="product-price">$28.00</div>
-                <p class="product-description">Bufanda tejida a mano con lana 100% natural. Suave, cálida y perfecta para el invierno con diseños únicos.</p>
-                <div class="product-actions-top">
-                  <a href="/productos/nunca-te-pares.html" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/c8/e4/13/c8e41378c4643036ecf18055c8af61d9.jpg" alt="Manual de Artesanía Moderna" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Manual de Artesanía Moderna</h3>
-                <div class="product-price">$42.00</div>
-                <p class="product-description">Guía completa con técnicas y proyectos paso a paso para crear piezas artesanales modernas y únicas.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/2a/9c/1c/2a9c1c46d954517429c8a5ad5818df36.jpg" alt="Labial Mate de Larga Duración" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Labial Mate de Larga Duración</h3>
-                <div class="product-price">$18.00</div>
-                <p class="product-description">Labial con acabado mate y fórmula de larga duración. Disponible en múltiples tonos vibrantes y naturales.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://www.penguinlibros.com/cl/2381327-large_default/la-revelacion-almas-perdidas-1.webp" alt="Collar de Plata con Piedras" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Collar de Plata con Piedras</h3>
-                <div class="product-price">$55.00</div>
-                <p class="product-description">Elegante collar de plata 925 con piedras semipreciosas. Diseño artesanal único que resalta tu estilo.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/ee/b8/7a/eeb87a0078706d53dc0ee75d91af5b09.jpg" alt="Novela de Ficción Contemporánea" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Novela de Ficción Contemporánea</h3>
-                <div class="product-price">$22.00</div>
-                <p class="product-description">Una historia emocionante que te transportará a mundos increíbles. Lectura perfecta para disfrutar en cualquier momento.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/0b/72/87/0b728798f3ca6daab265c3ce94882faa.jpg" alt="Base de Maquillaje Natural" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Base de Maquillaje Natural</h3>
-                <div class="product-price">$38.00</div>
-                <p class="product-description">Base ligera y natural que unifica el tono de tu piel. Cobertura media con acabado satinado y duradero.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/a8/f7/ff/a8f7fffd48f08f1a2a2f866d8b28aa47.jpg" alt="Macetero de Barro Decorado" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Macetero de Barro Decorado</h3>
-                <div class="product-price">$35.00</div>
-                <p class="product-description">Macetero artesanal de barro con decoración única. Perfecto para plantas pequeñas y medianas, con diseño tradicional.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i.pinimg.com/736x/c3/86/29/c38629ba1a44ebb746d842cb4617cffe.jpg" alt="Guía de Diseño y Estilo" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Guía de Diseño y Estilo</h3>
-                <div class="product-price">$48.00</div>
-                <p class="product-description">Manual completo sobre principios de diseño, estilos y tendencias. Ideal para diseñadores y creativos.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/e4/55/e45590dcdf647c88d3a5e4c1297b8db9.jpg" alt="Kit de Brochas Profesional" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Kit de Brochas Profesional</h3>
-                <div class="product-price">$65.00</div>
-                <p class="product-description">Set completo de 12 brochas profesionales de alta calidad. Cerdas suaves y ergonómicas para un maquillaje perfecto.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-            
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_845550-MLA88114393167_072025-F.webp" alt="Kit de Brochas Profesional (Ejemplo 1)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Kit de Brochas Profesional</h3>
-                <div class="product-price">$65.00</div>
-                <p class="product-description">Set completo de 12 brochas profesionales de alta calidad. Cerdas suaves y ergonómicas para un maquillaje perfecto.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/ed/2f/ed2fd7ce242bec1bbe4e8cecf9cb5777.jpg" alt="Kit de Brochas Profesional (Ejemplo 2)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Kit de Brochas Profesional</h3>
-                <div class="product-price">$65.00</div>
-                <p class="product-description">Set completo de 12 brochas profesionales de alta calidad. Cerdas suaves y ergonómicas para un maquillaje perfecto.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/af/59/af59d9e08687c9de675e03ea1395b69c.jpg" alt="Kit de Brochas Profesional (Ejemplo 3)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Kit de Brochas Profesional</h3>
-                <div class="product-price">$65.00</div>
-                <p class="product-description">Set completo de 12 brochas profesionales de alta calidad. Cerdas suaves y ergonómicas para un maquillaje perfecto.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://i0.wp.com/incunabula.co/wp-content/uploads/libro-la-culpa-es-de-la-vaca-jaime-lopera-marta-intermedio.webp?fit=800%2C800&ssl=1" alt="Libro La Culpa es de la Vaca (Ejemplo 1)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">La Culpa es de la Vaca</h3>
-                <div class="product-price">$20.00</div>
-                <p class="product-description">Colección de anécdotas y relatos para reflexionar sobre la actitud, la creatividad y el liderazgo personal.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://www.antartica.cl/media/catalog/product/9/7/9788478086085_1.png?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg" alt="Libro El Código Da Vinci (Ejemplo 2)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">El Código Da Vinci</h3>
-                <div class="product-price">$24.50</div>
-                <p class="product-description">Famosa novela de misterio y conspiración que combina arte, historia y simbología. Una lectura cautivadora.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/db/2b/db2b538974143607a817fbc28577cb09.jpg" alt="Libro El Alquimista (Ejemplo 3)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">El Alquimista</h3>
-                <div class="product-price">$19.00</div>
-                <p class="product-description">Novela inspiradora sobre el autodescubrimiento y la importancia de seguir los sueños. Un clásico moderno.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622471-MLA46040246781_052021-F.webp" alt="Set de Maquillaje de Ojos (Ejemplo 4)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Set de Maquillaje de Ojos</h3>
-                <div class="product-price">$40.00</div>
-                <p class="product-description">Incluye máscara, delineador líquido y lápiz. Todo lo necesario para una mirada impactante y duradera.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/5b/1e/5b1ee931416902d55c56e21ee0f6ee67.jpg" alt="Kit de Cuidado Facial Orgánico (Ejemplo 5)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Kit de Cuidado Facial Orgánico</h3>
-                <div class="product-price">$75.00</div>
-                <p class="product-description">Rutina completa con limpiador, tónico y sérum. Ingredientes 100% naturales para una piel radiante.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://www.penguinlibros.com/cl/2482231-large_default/terapia-para-llevar.webp" alt="Libro Terapia para Llevar (Ejemplo 6)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">Terapia para Llevar</h3>
-                <div class="product-price">$26.00</div>
-                <p class="product-description">Un manual práctico de autoterapia emocional, con ejercicios sencillos para manejar el estrés y la ansiedad.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-            
-            <article class="catalog-product-card">
-              <div class="product-image">
-                <img src="https://www.antartica.cl/media/catalog/product/9/7/9798289668523" alt="Libro El Arte de la Guerra (Ejemplo 7)" />
-              </div>
-              <div class="product-info">
-                <h3 class="product-name">El Arte de la Guerra</h3>
-                <div class="product-price">$15.00</div>
-                <p class="product-description">Clásico tratado militar que ofrece estrategias aplicables a negocios y vida cotidiana. Edición de bolsillo.</p>
-                <div class="product-actions-top">
-                  <a href="#" class="btn-view" aria-label="Ver detalles del producto">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>ver</span>
-                  </a>
-                </div>
-                <button class="btn-add-cart">Agregar al Carrito</button>
-              </div>
-            </article>
-
+      <div class="footer-contact">
+        <h4 class="footer-title">Contacto</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span>contacto@lightofmuse.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span>Av. Innovación 123, Ciudad Digital</span>
           </div>
         </div>
-      </section>
-    </main>
-    
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-logo">Light Of Muse</h3>
-          <p class="footer-slogan">Iluminando tu camino en el comercio digital</p>
-          <div class="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M21 11.5a10 10 0 1 1-20 0c0-1.74.44-3.37 1.22-4.8L2 2l4.7 1.22A9.98 9.98 0 0 1 11.5 2a10 10 0 0 1 9.5 9.5z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M16.5 13.5c-.3-.15-1.7-.85-1.97-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.95 1.15-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5-.18 0-.37-.02-.57-.02-.2 0-.52.07-.8.35-.28.28-1.1 1.07-1.1 2.6 0 1.53 1.12 3.02 1.27 3.23.15.2 2.2 3.35 5.33 4.7.74.3 1.32.48 1.77.62.75.22 1.43.19 1.97.12.6-.08 1.7-.7 1.95-1.37.24-.68.24-1.26.17-1.37-.08-.1-.3-.2-.6-.35z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4 class="footer-title">Enlaces</h4>
-          <nav class="footer-nav">
-            <a href="index.html" class="footer-link">Inicio</a>
-            <a href="products.html" class="footer-link">Tienda</a>
-            <a href="dashboard.html" class="footer-link">Finanzas</a>
-            <a href="about.html" class="footer-link">Quiénes Somos</a>
-            <a href="contact.html" class="footer-link">Contacto</a>
-          </nav>
-        </div>
-
-        <div class="footer-contact">
-          <h4 class="footer-title">Contacto</h4>
-          <div class="contact-info">
-            <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <span>+1 (555) 123-4567</span>
-            </div>
-            <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span>contacto@lightofmuse.com</span>
-            </div>
-            <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span>Av. Innovación 123, Ciudad Digital</span>
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="footer-copyright">© 2025 Light Of Muse. Pagina Creada Por Ricardo Antequera Para la Feria Eduproft B-72</p>
-        </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">© 2025 Light Of Muse. Pagina Creada Por Ricardo Antequera Para la Feria Eduproft
+          B-72</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+  <script src="/js/products.js"></script>
+</body>
+
 </html>

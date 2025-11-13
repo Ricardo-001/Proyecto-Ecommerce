@@ -103,7 +103,7 @@
 
     /* Product Image Section */
     .product-image-section {
-        position: sticky;
+        position: static;
         top: 140px;
     }
 
@@ -356,3 +356,16 @@
         color: var(--muted);
         line-height: 1.8;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    

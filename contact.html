@@ -1,118 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto · NovaCommerce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="/Gemini_Generated_Image_mtl4rimtl4rimtl4 - copia.png" alt="Logo Light Of Muse" class="brand-logo-icon"> 
-          <span class="brand-text">Light Of Muse</span>
-        </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Inicio</a>  
-          <a href="products.html" class="nav-link">Tienda</a>
-          <a href="dashboard.html" class="nav-link">Finanzas</a>
-          <a href="about.html" class="nav-link">Quiénes Somos</a>
-          <a href="contact.html" class="nav-link" aria-current="page">Contacto</a>
-        </nav>
-        <button class="cart-btn" aria-label="Carrito">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="9.5" cy="19" r="1.5" fill="currentColor"/>
-            <circle cx="17" cy="19" r="1.5" fill="currentColor"/>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · NovaCommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<style>
+  /* Estilos básicos para la sección de donaciones (pueden requerir ajustes en tu archivo styles.css) */
+  .donation-section {
+    background-color: #f7f7f7;
+    padding: 30px 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .donation-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .donation-section img {
+    max-width: 180px;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .account-details {
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: inline-block;
+    /* Centrar la lista */
+  }
+
+  .account-details strong {
+    display: inline-block;
+    min-width: 120px;
+    /* Asegura alineación si es necesario */
+  }
+</style>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      
+      <a class="brand" href="index.html">
+        <img src="/Gemini_Generated_Image_mtl4rimtl4rimtl4 - copia.png" alt="Logo Light Of Muse"
+          class="brand-logo-icon">
+        <span class="brand-text">Light Of Muse</span>
+      </a>
+      
+      <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" aria-label="Toggle Menu">
+  
+      <label for="menu-toggle-checkbox" class="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
-        </button>
+      </label>
+  
+      <nav class="nav">
+        <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+        <a href="products.html" class="nav-link">Tienda</a>
+        <a href="dashboard.html" class="nav-link">Finanzas</a>
+        <a href="about.html" class="nav-link">Quiénes Somos</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+      
+      <a href="cart.html" class="cart-btn" aria-label="Carrito de compras">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M7 7H21L19 14H8L7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M7 7L6 3H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               <circle cx="9.5" cy="19" r="1.5" fill="currentColor" />
+               <circle cx="17" cy="19" r="1.5" fill="currentColor" />
+          </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="contact">
+    <!-- 1. Hero de Ayuda -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1 class="page-title-gradient">¿Cómo podemos ayudarte hoy?</h1>
+        <p class="page-subtitle">Elige la vía más rápida para resolver tu consulta o encontrar la información que
+          necesitas.</p>
       </div>
-    </header>
+    </section>
 
-    <main class="contact">
-      <!-- 1. Hero de Ayuda -->
-      <section class="contact-hero">
-        <div class="container">
-          <h1 class="page-title-gradient">¿Cómo podemos ayudarte hoy?</h1>
-          <p class="page-subtitle">Elige la vía más rápida para resolver tu consulta o encontrar la información que necesitas.</p>
-        </div>
-      </section>
 
-      <!-- 2. Bisección: Auto-Servicio vs Contacto Directo -->
-      <section class="contact-grid">
-        <div class="container">
-          <!-- Columna Izquierda: Auto-Servicio -->
-          <div class="contact-selfservice">
-          <h2>Encuentra tu respuesta al instante</h2>
-          <form class="help-search" action="#" role="search" onsubmit="return false">
-            <label for="helpQuery" class="visually-hidden">Buscar en el Centro de Ayuda</label>
-            <input id="helpQuery" type="search" placeholder="Busca en el Centro de Ayuda o FAQ" aria-label="Buscar preguntas frecuentes" />
-            <button class="button primary glow" aria-label="Buscar">Buscar</button>
-          </form>
 
-          <div class="quick-links">
-            <a class="button outline" href="#">Seguimiento de Pedido Digital</a>
-            <a class="button outline" href="#">Reembolsos y Devoluciones</a>
-            <a class="button outline" href="#">Guía de Inicio Rápido</a>
-            <a class="button outline" href="#">Instalación del Producto</a>
+    <section class="donation-section">
+      <h2>Codigo QR</h2>
+      <p>Si deseas apoyar nuestro proyecto, puedes realizar una transferencia a la cuenta de la organización o escanear
+        el código QR.</p>
+
+      <img src="/Codigo QR.png" alt="Código QR para transferencias" loading="lazy">
+
+      <h3>Datos de la Cuenta Bancaria:</h3>
+      <div class="account-details">
+        <ul>
+          <li><strong>Nombre:</strong> RICARDO ENRIQUE ANTEQUERA HERNANDEZ</li>
+          <li><strong>Rut:</strong> 28262262-9</li>
+          <li><strong>Banco:</strong> BancoEstado</li>
+          <li><strong>Tipo:</strong> CuentaRUT</li>
+          <li><strong>Número Cuenta:</strong> 00028262262</li>
+        </ul>
+      </div>
+      <p style="margin-top: 15px; font-style: italic;">¡Gracias por tu valiosa colaboración!</p>
+    </section>
+
+
+
+    <!-- 2. Bisección: Auto-Servicio vs Contacto Directo -->
+    <section class="contact-grid">
+
+      <!-- Columna Derecha: Contacto Directo -->
+      <div class="contact-form">
+        <h2>Contáctanos directamente</h2>
+        <form class="form" action="#" method="post" onsubmit="return false">
+          <div class="field">
+            <label for="name">Nombre Completo (opcional)</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
           </div>
-        </div>
-
-          <!-- Columna Derecha: Contacto Directo -->
-          <div class="contact-form">
-            <h2>Contáctanos directamente</h2>
-            <form class="form" action="#" method="post" onsubmit="return false">
-              <div class="field">
-                <label for="name">Nombre Completo (opcional)</label>
-                <input id="name" name="name" type="text" autocomplete="name" />
-              </div>
-              <div class="field">
-                <label for="email">Correo Electrónico (corporativo)</label>
-                <input id="email" name="email" type="email" required inputmode="email" placeholder="nombre@empresa.com" />
-              </div>
-              <div class="field">
-                <label for="topic">Asunto / Motivo</label>
-                <select id="topic" name="topic" required>
-                  <option value="">Selecciona una opción</option>
-                  <option>Soporte Técnico</option>
-                  <option>Facturación</option>
-                  <option>Consulta de Venta</option>
-                  <option>Prensa</option>
-                  <option>Otro</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
-              </div>
-              <div class="field checkbox">
-                <input id="consent" name="consent" type="checkbox" required />
-                <label for="consent">He leído y acepto la política de privacidad (RGPD).</label>
-              </div>
-              <div class="form-actions">
-                <button class="button primary glow" type="submit">Enviar Mensaje</button>
-                <p class="muted small">Respondemos en un plazo máximo de 24 horas laborables.</p>
-              </div>
-            </form>
+          <div class="field">
+            <label for="email">Correo Electrónico (corporativo)</label>
+            <input id="email" name="email" type="email" required inputmode="email" placeholder="nombre@empresa.com" />
           </div>
-        </div>
-      </section>
+          <div class="field">
+            <label for="topic">Asunto / Motivo</label>
+            <select id="topic" name="topic" required>
+              <option value="">Selecciona una opción</option>
+              <option>Soporte Técnico</option>
+              <option>Facturación</option>
+              <option>Consulta de Venta</option>
+              <option>Prensa</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+          </div>
+          <div class="field checkbox">
+            <input id="consent" name="consent" type="checkbox" required />
+            <label for="consent">He leído y acepto la política de privacidad (RGPD).</label>
+          </div>
+          <div class="form-actions">
+            <button class="button primary glow" type="submit">Enviar Mensaje</button>
+            <p class="muted small">Respondemos en un plazo máximo de 24 horas laborables.</p>
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
 
-      <!-- 3. Canales de Soporte -->
-      <section class="contact-channels">
-        <div class="container">
+    <!-- 3. Canales de Soporte -->
+    <section class="contact-channels">
+      <div class="container">
         <h2>Otras Formas de Comunicación</h2>
         <div class="channels-grid">
           <article class="channel-card">
             <div class="channel-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z" />
+              </svg>
             </div>
             <div class="channel-body">
               <h3>Chat en Vivo / WhatsApp</h3>
@@ -123,22 +197,28 @@
 
           <article class="channel-card">
             <div class="channel-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 3h18v4H3zM7 7h10v14H7z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M3 3h18v4H3zM7 7h10v14H7z" />
+              </svg>
             </div>
             <div class="channel-body">
               <h3>Redes Sociales</h3>
               <p>Consultas rápidas no críticas.</p>
               <div class="social-links">
                 <a class="link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">X</a>
-                <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-                <a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                  aria-label="LinkedIn">LinkedIn</a>
+                <a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                  aria-label="Instagram">Instagram</a>
               </div>
             </div>
           </article>
 
           <article class="channel-card">
             <div class="channel-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
             </div>
             <div class="channel-body">
               <h3>Oficina Principal</h3>
@@ -147,9 +227,9 @@
             </div>
           </article>
         </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -244,7 +324,8 @@
     </div>
   </footer>
 
-  </body>
-  </html>
+  <script src="/js/contact.js"></script>
+  <script src="/js/products.js"></script>
+</body>
 
-
+</html>
